@@ -44,8 +44,85 @@ const ais = [
         name: "Notion AI",
         description: "IA integrada en Notion que ayuda a generar contenido, resumir notas y organizar ideas eficientemente.",
         link: "https://www.notion.so/product/ai"
+    },
+       // Nuevas IAs
+    {
+        name: "Runway ML",
+        description: "Plataforma para la creación de contenido visual con IA.",
+        link: "https://runwayml.com/"
+    },
+    {
+        name: "Mubert",
+        description: "Generador de música AI en tiempo real.",
+        link: "https://mubert.com/"
+    },
+    {
+        name: "Fotor AI",
+        description: "Herramienta de diseño gráfico con IA para creación y edición de imágenes.",
+        link: "https://www.fotor.com/features/ai-image-generator/"
+    },
+    {
+        name: "Lumen5",
+        description: "IA que convierte texto en vídeos automáticamente.",
+        link: "https://www.lumen5.com/"
+    },
+    {
+        name: "Pictory",
+        description: "IA que convierte texto en resúmenes visuales en video.",
+        link: "https://pictory.ai/"
+    },
+    {
+        name: "Synthesia",
+        description: "Plataforma para crear videos con avatares generados por IA.",
+        link: "https://www.synthesia.io/"
+    },
+    {
+        name: "Jasper",
+        description: "Generador de contenido escrito utilizando IA.",
+        link: "https://www.jasper.ai/"
+    },
+    {
+        name: "DeepL",
+        description: "Traductor automático de alta calidad.",
+        link: "https://www.deepl.com/translator"
+    },
+    {
+        name: "Descript",
+        description: "IA para transcripción de audio y video.",
+        link: "https://www.descript.com/"
+    },
+    {
+        name: "Speechify",
+        description: "Convierte texto a voz con voces naturales.",
+        link: "https://speechify.com/"
+    },
+    {
+        name: "AI Dungeon",
+        description: "Juego interactivo generado por IA.",
+        link: "https://play.aidungeon.io/"
+    },
+    {
+        name: "Copy.ai",
+        description: "Generador de textos creativos con IA.",
+        link: "https://www.copy.ai/"
+    },
+    {
+        name: "Whisper",
+        description: "Sistema de transcripción de audio creado por OpenAI.",
+        link: "https://openai.com/research/whisper"
+    },
+    {
+        name: "Humata",
+        description: "IA para interactuar con documentos y responder preguntas.",
+        link: "https://www.humata.ai/"
+    },
+    {
+        name: "Tabnine",
+        description: "IA de autocompletado de código para desarrolladores.",
+        link: "https://www.tabnine.com/"
     }
 ];
+
 
 function createAIItem(ai) {
     const aiItem = document.createElement("div");
