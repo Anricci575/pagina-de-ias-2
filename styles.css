@@ -328,3 +328,85 @@ body.retro-mode .category-tag {
     background: rgba(255, 255, 0, 0.1);
     border: 1px solid var(--border-color);
 }
+/* Estilos para el modal de documentación */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    backdrop-filter: blur(5px);
+}
+
+.modal-content {
+    background: var(--card-bg);
+    padding: 30px;
+    border-radius: 15px;
+    width: 80%;
+    max-width: 800px;
+    max-height: 80vh;
+    overflow-y: auto;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.close-modal {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--text-color);
+    transition: transform 0.3s;
+}
+
+.close-modal:hover {
+    transform: scale(1.2);
+}
+
+.doc-content h3 {
+    margin-top: 20px;
+    color: var(--btn-text);
+    border-bottom: 2px solid var(--btn-bg);
+    padding-bottom: 5px;
+}
+
+.doc-content ul, .doc-content ol {
+    margin: 15px 0;
+    padding-left: 30px;
+}
+
+.doc-content li {
+    margin-bottom: 8px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Estilos específicos para modo retro */
+body.retro-mode .modal-content {
+    background: rgba(0, 0, 0, 0.8);
+    border: 2px solid var(--border-color);
+    color: var(--text-color);
+}
+
+body.retro-mode .doc-content h3 {
+    color: var(--highlight-color);
+    border-bottom: 2px solid var(--border-color);
+    text-shadow: 0 0 5px var(--shadow-color);
+}
+
+body.retro-mode .close-modal {
+    color: var(--highlight-color);
+}
+
+body.retro-mode .doc-content ul,
+body.retro-mode .doc-content ol {
+    color: var(--text-color);
+}
