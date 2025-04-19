@@ -1,135 +1,209 @@
-// Lista de IAs dinámicas
+// Lista de IAs dinámicas con categorías
 const ais = [
     {
         name: "Deepseek",
         description: "IA especializada en búsqueda avanzada y análisis de datos en tiempo real.",
-        link: "https://www.deepseek.com/"
+        link: "https://www.deepseek.com/",
+        category: "Búsqueda y Análisis"
     },
     {
         name: "Copilot",
         description: "IA de GitHub para asistencia en codificación y generación de código en tiempo real.",
-        link: "https://copilot.github.com/"
+        link: "https://copilot.github.com/",
+        category: "Programación"
     },
     {
         name: "Blackbox",
         description: "IA que convierte descripciones en texto en código y facilita la programación.",
-        link: "https://www.blackbox.ai/"
+        link: "https://www.blackbox.ai/",
+        category: "Programación"
     },
     {
         name: "ChatGPT",
         description: "IA de OpenAI diseñada para mantener conversaciones naturales y responder preguntas.",
-        link: "https://chat.openai.com/"
+        link: "https://chat.openai.com/",
+        category: "Chatbots"
     },
     {
         name: "Géminis",
         description: "IA de Google enfocada en combinar capacidades de búsqueda avanzada con respuestas generativas.",
-        link: "https://gemini.google.com/app?hl=es"
+        link: "https://gemini.google.com/app?hl=es",
+        category: "Chatbots"
     },
     {
         name: "Phind.com",
         description: "IA para programadores que responde preguntas técnicas con resultados precisos.",
-        link: "https://www.phind.com/"
+        link: "https://www.phind.com/",
+        category: "Programación"
     },
     {
         name: "Replit.com",
         description: "IA que permite a los desarrolladores escribir, depurar y ejecutar código directamente desde el navegador.",
-        link: "https://www.replit.com/"
+        link: "https://www.replit.com/",
+        category: "Programación"
     },
     {
         name: "Leonardo AI",
         description: "IA diseñada para generar imágenes y arte con calidad profesional basado en descripciones.",
-        link: "https://leonardo.ai"
+        link: "https://leonardo.ai",
+        category: "Generación de Imágenes"
     },
     {
         name: "Notion AI",
         description: "IA integrada en Notion que ayuda a generar contenido, resumir notas y organizar ideas eficientemente.",
-        link: "https://www.notion.so/product/ai"
+        link: "https://www.notion.so/product/ai",
+        category: "Productividad"
     },
-       // Nuevas IAs
     {
         name: "Runway ML",
         description: "Plataforma para la creación de contenido visual con IA.",
-        link: "https://runwayml.com/"
+        link: "https://runwayml.com/",
+        category: "Generación de Imágenes"
     },
     {
         name: "Mubert",
         description: "Generador de música AI en tiempo real.",
-        link: "https://mubert.com/"
+        link: "https://mubert.com/",
+        category: "Generación de Audio"
     },
     {
         name: "Fotor AI",
         description: "Herramienta de diseño gráfico con IA para creación y edición de imágenes.",
-        link: "https://www.fotor.com/features/ai-image-generator/"
+        link: "https://www.fotor.com/features/ai-image-generator/",
+        category: "Generación de Imágenes"
     },
     {
         name: "Lumen5",
         description: "IA que convierte texto en vídeos automáticamente.",
-        link: "https://www.lumen5.com/"
+        link: "https://www.lumen5.com/",
+        category: "Generación de Video"
     },
     {
         name: "Pictory",
         description: "IA que convierte texto en resúmenes visuales en video.",
-        link: "https://pictory.ai/"
+        link: "https://pictory.ai/",
+        category: "Generación de Video"
     },
     {
         name: "Synthesia",
         description: "Plataforma para crear videos con avatares generados por IA.",
-        link: "https://www.synthesia.io/"
+        link: "https://www.synthesia.io/",
+        category: "Generación de Video"
     },
     {
         name: "Jasper",
         description: "Generador de contenido escrito utilizando IA.",
-        link: "https://www.jasper.ai/"
+        link: "https://www.jasper.ai/",
+        category: "Generación de Texto"
     },
     {
         name: "DeepL",
         description: "Traductor automático de alta calidad.",
-        link: "https://www.deepl.com/translator"
+        link: "https://www.deepl.com/translator",
+        category: "Traducción"
     },
     {
         name: "Descript",
         description: "IA para transcripción de audio y video.",
-        link: "https://www.descript.com/"
+        link: "https://www.descript.com/",
+        category: "Procesamiento de Audio"
     },
     {
         name: "Speechify",
         description: "Convierte texto a voz con voces naturales.",
-        link: "https://speechify.com/"
+        link: "https://speechify.com/",
+        category: "Texto a Voz"
     },
     {
         name: "AI Dungeon",
         description: "Juego interactivo generado por IA.",
-        link: "https://play.aidungeon.io/"
+        link: "https://play.aidungeon.io/",
+        category: "Entretenimiento"
     },
     {
         name: "Copy.ai",
         description: "Generador de textos creativos con IA.",
-        link: "https://www.copy.ai/"
+        link: "https://www.copy.ai/",
+        category: "Generación de Texto"
     },
     {
         name: "Whisper",
         description: "Sistema de transcripción de audio creado por OpenAI.",
-        link: "https://openai.com/research/whisper"
+        link: "https://openai.com/research/whisper",
+        category: "Procesamiento de Audio"
     },
     {
         name: "Humata",
         description: "IA para interactuar con documentos y responder preguntas.",
-        link: "https://www.humata.ai/"
+        link: "https://www.humata.ai/",
+        category: "Búsqueda y Análisis"
     },
     {
         name: "Tabnine",
         description: "IA de autocompletado de código para desarrolladores.",
-        link: "https://www.tabnine.com/"
+        link: "https://www.tabnine.com/",
+        category: "Programación"
     }
 ];
 
+// Función para crear filtros de categoría
+function createCategoryFilters() {
+    const categories = [...new Set(ais.map(ai => ai.category))];
+    const filterContainer = document.createElement("div");
+    filterContainer.classList.add("category-filters");
+    
+    // Crear botón "Todos"
+    const allButton = document.createElement("button");
+    allButton.textContent = "Todos";
+    allButton.classList.add("filter-btn", "active");
+    allButton.addEventListener("click", () => filterAIsByCategory(null));
+    filterContainer.appendChild(allButton);
+    
+    // Crear botones para cada categoría
+    categories.forEach(category => {
+        const button = document.createElement("button");
+        button.textContent = category;
+        button.classList.add("filter-btn");
+        button.addEventListener("click", () => filterAIsByCategory(category));
+        filterContainer.appendChild(button);
+    });
+    
+    // Insertar antes de la lista de IAs
+    const aiListElement = document.getElementById("aiList");
+    if (aiListElement) {
+        aiListElement.parentNode.insertBefore(filterContainer, aiListElement);
+    }
+}
+
+// Función para filtrar IAs por categoría
+function filterAIsByCategory(category) {
+    const aiItems = document.querySelectorAll(".ai-item");
+    const filterButtons = document.querySelectorAll(".filter-btn");
+    
+    // Actualizar botones activos
+    filterButtons.forEach(btn => {
+        btn.classList.toggle("active", 
+            (btn.textContent === "Todos" && category === null) || 
+            btn.textContent === category
+        );
+    });
+    
+    // Mostrar/ocultar elementos según categoría
+    aiItems.forEach(item => {
+        const shouldShow = category === null || 
+                         item.getAttribute("data-category") === category;
+        item.style.display = shouldShow ? "flex" : "none";
+    });
+}
 
 function createAIItem(ai) {
     const aiItem = document.createElement("div");
     aiItem.classList.add("ai-item");
-
+    aiItem.setAttribute("data-category", ai.category);
+    
     aiItem.innerHTML = `
         <h3>${sanitizeHTML(ai.name)}</h3>
+        <p class="category-tag">${sanitizeHTML(ai.category)}</p>
         <p>${sanitizeHTML(ai.description)}</p>
         <a href="${sanitizeHTML(ai.link)}" target="_blank" rel="noopener noreferrer">
             <button class="btn">Ver más</button>
@@ -174,6 +248,7 @@ function generateSummary() {
     const headerRow = document.createElement("tr");
     headerRow.innerHTML = `
         <th>Nombre</th>
+        <th>Categoría</th>
         <th>Descripción</th>
         <th>Enlace</th>
     `;
@@ -184,6 +259,7 @@ function generateSummary() {
         const row = document.createElement("tr");
         row.innerHTML = `
             <td>${sanitizeHTML(ai.name)}</td>
+            <td>${sanitizeHTML(ai.category)}</td>
             <td>${sanitizeHTML(ai.description)}</td>
             <td><a href="${sanitizeHTML(ai.link)}" target="_blank" rel="noopener noreferrer">Visitar</a></td>
         `;
@@ -200,7 +276,7 @@ canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
 let particles = [];
-const numParticles = 200; // Incrementado a 200 para más partículas
+const numParticles = 200;
 
 const mouse = {
     x: undefined,
@@ -305,6 +381,7 @@ window.addEventListener("resize", () => {
 });
 
 function initializePage() {
+    createCategoryFilters();
     loadAIs();
     generateSummary();
     initParticles();
