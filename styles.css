@@ -266,3 +266,65 @@ footer {
 #retro-toggle:hover {
     transform: scale(1.1);
 }
+/* Agrega esto al final del archivo */
+.category-filters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+}
+
+.filter-btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    color: var(--text-color);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filter-btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.05);
+}
+
+.filter-btn.active {
+    background: var(--btn-bg);
+    font-weight: bold;
+}
+
+.category-tag {
+    font-size: 0.8rem;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 3px 10px;
+    border-radius: 20px;
+    display: inline-block;
+    margin-bottom: 8px;
+}
+
+/* Estilos para modo retro */
+body.retro-mode .category-filters {
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid var(--border-color);
+}
+
+body.retro-mode .filter-btn {
+    background: rgba(255, 255, 0, 0.1);
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+}
+
+body.retro-mode .filter-btn.active {
+    background: var(--border-color);
+    color: var(--background-color);
+}
+
+body.retro-mode .category-tag {
+    background: rgba(255, 255, 0, 0.1);
+    border: 1px solid var(--border-color);
+}
