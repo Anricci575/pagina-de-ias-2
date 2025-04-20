@@ -852,3 +852,181 @@ body.dark-mode .ai-category {
 .favorite-btn:hover {
     color: orange;
 }
+/* Sección de Favoritos */
+#favorites-section {
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    display: none; /* Ocultar por defecto */
+}
+
+#favorites-section h2 {
+    margin-bottom: 10px;
+}
+
+/* Botón de Favoritos */
+.favorite-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: #ccc;
+    margin-left: 10px;
+    transition: color 0.3s ease;
+}
+
+.favorite-btn.active {
+    color: gold; /* Color dorado para favoritos activos */
+}
+
+.favorite-btn:hover {
+    color: orange;
+}
+
+/* Mostrar sección de favoritos si tiene contenido */
+#favorites-section:not(.hidden) {
+    display: block;
+}
+/* Favoritos: Diseño Mejorado */
+#favorites-section {
+    margin: 30px auto;
+    padding: 25px;
+    border: 2px solid var(--btn-bg);
+    border-radius: 15px;
+    background-color: var(--card-bg);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+    display: none; /* Ocultar por defecto */
+    transition: all 0.3s ease-in-out;
+}
+
+#favorites-section.visible {
+    display: block;
+}
+
+#favorites-section h2 {
+    margin-bottom: 15px;
+    color: var(--btn-bg);
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+#favorites-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Tarjetas de Favoritos */
+.ai-item.favorite {
+    position: relative;
+    border: 2px solid gold;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ai-item.favorite:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 10px 25px rgba(255, 215, 0, 0.5);
+}
+
+/* Icono de Favorito */
+.ai-item.favorite::after {
+    content: "★";
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 2rem;
+    color: gold;
+    text-shadow: 0 0 8px rgba(255, 215, 0, 0.8);
+}
+
+/* Botón de Favorito */
+.favorite-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: var(--btn-text);
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.favorite-btn.active {
+    color: gold;
+    transform: scale(1.2);
+}
+
+.favorite-btn:hover {
+    color: orange;
+    transform: scale(1.3);
+}
+
+/* Botones en Tarjetas */
+.ai-item .btn,
+.ai-item .visit-btn {
+    background: var(--btn-bg);
+    color: var(--btn-text);
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.ai-item .btn:hover,
+.ai-item .visit-btn:hover {
+    background: var(--btn-hover-bg);
+    transform: scale(1.1);
+}
+
+/* Favoritos en Modo Oscuro */
+body.dark-mode #favorites-section {
+    border-color: gold;
+    background-color: var(--summary-bg);
+    box-shadow: 0 6px 15px rgba(255, 215, 0, 0.2);
+}
+
+body.dark-mode .favorite-btn.active {
+    color: #ffcc00;
+}
+body.retro-mode .ai-item .btn {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+/* Ocultar el botón "Ver más" en modo retro */
+body.retro-mode .ai-item .visit-btn {
+    display: none;
+}
+/* Ajustar la posición del botón de favoritos */
+body.retro-mode .ai-item .favorite-btn {
+    position: absolute; /* Posición absoluta para moverlo dentro de la tarjeta */
+    top: 10px; /* Ajusta la distancia desde la parte superior */
+    right: 10px; /* Ajusta la distancia desde la derecha */
+    font-size: 1.8rem; /* Tamaño del botón */
+    color: var(--highlight-color);
+    z-index: 2; /* Asegura que esté por encima de otros elementos */
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+body.retro-mode .ai-item {
+    position: relative; /* Necesario para que el botón se posicione dentro de la tarjeta */
+}
+/* Ajustar la posición del botón de favoritos */
+body.retro-mode .ai-item .favorite-btn {
+    position: absolute; /* Posición absoluta para moverlo dentro de la tarjeta */
+    top: 10px; /* Ajusta la distancia desde la parte superior */
+    right: 10px; /* Ajusta la distancia desde la derecha */
+    font-size: 1.8rem; /* Tamaño del botón */
+    color: var(--highlight-color);
+    z-index: 2; /* Asegura que esté por encima de otros elementos */
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+body.retro-mode .ai-item {
+    position: relative; /* Necesario para que el botón se posicione dentro de la tarjeta */
+}
