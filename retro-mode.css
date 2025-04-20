@@ -379,3 +379,17 @@ body.retro-mode #retro-toggle:hover {
 @keyframes blink {
     50% { opacity: 0; }
 }
+/* Encabezado de cada IA en Modo Retro */
+body.retro-mode .ai-item h3 {
+    font-family: 'VT323', monospace; /* Fuente retro */
+    font-size: 1.8rem; /* Tamaño de fuente más grande */
+    color: var(--highlight-color); /* Color amarillo claro */
+    text-shadow: 0 0 5px var(--border-color); /* Efecto de brillo */
+    margin-bottom: 10px; /* Separación del texto siguiente */
+    text-transform: uppercase; /* Texto en mayúsculas para un efecto retro */
+    letter-spacing: 1px; /* Aumenta el espaciado entre letras */
+    text-align: center; /* Asegurar que el texto esté centrado */
+    word-wrap: break-word; /* Permitir que el texto se ajuste si es muy largo */
+    overflow: visible; /* Mostrar todo el contenido */
+    white-space: normal; /* Permitir saltos de línea */
+}
