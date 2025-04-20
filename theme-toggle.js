@@ -43,17 +43,7 @@ retroToggle.addEventListener("click", () => {
             startRetroMode();
         }
     } else {
-        // Eliminar CSS retro
-        const retroStyle = document.getElementById("retro-style");
-        if (retroStyle) retroStyle.remove();
 
-        // Eliminar script retro
-        const retroScript = document.getElementById("retro-script");
-        if (retroScript) retroScript.remove();
-
-        // Ocultar el canvas de animación
-        const retroCanvas = document.getElementById("retroCanvas");
-        if (retroCanvas) retroCanvas.style.display = "none";
 
         // Eliminar terminal falsa si está
         const boot = document.getElementById("boot-sequence");
