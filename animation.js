@@ -255,7 +255,7 @@ const ais = [
     {
         name: "Dora AI",
         description: "Genera sitios web interactivos a partir de prompts de texto.",
-        link: "https://www.dora.ai/",
+        link: "https://dora.run/",  // ¡Link correcto!,
         category: "Diseño"
     },
     {
