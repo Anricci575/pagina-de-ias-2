@@ -317,7 +317,13 @@ const ais = [
         description: "Crea presentaciones, documentos y páginas web con IA.",
         link: "https://gamma.app/",
         category: "Productividad"
-    }
+    },
+    {
+        name: "Kimi.ai",
+        description: "IA conversacional avanzada con capacidad de análisis de documentos y respuestas contextuales largas.",
+        link: "https://kimi.moonshot.cn/",  // Link oficial (en chino, pero funciona)
+        category: "Chatbots"
+    },
 ];
 
 // Función para crear filtros de categoría
