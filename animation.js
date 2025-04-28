@@ -143,6 +143,180 @@ const ais = [
         description: "IA de autocompletado de código para desarrolladores.",
         link: "https://www.tabnine.com/",
         category: "Programación"
+    },
+    {
+        name: "Midjourney",
+        description: "IA generadora de imágenes artísticas y diseños surrealistas mediante comandos de texto.",
+        link: "https://www.midjourney.com/",
+        category: "Generación de Imágenes"
+    },
+    {
+        name: "Stable Diffusion",
+        description: "Modelo de IA open-source para generar imágenes realistas o artísticas desde texto.",
+        link: "https://stablediffusionweb.com/",
+        category: "Generación de Imágenes"
+    },
+    {
+        name: "Claude",
+        description: "IA conversacional de Anthropic, enfocada en seguridad y razonamiento contextual.",
+        link: "https://claude.ai/",
+        category: "Chatbots"
+    },
+    {
+        name: "Perplexity AI",
+        description: "Motor de búsqueda con IA que responde preguntas con fuentes citadas.",
+        link: "https://www.perplexity.ai/",
+        category: "Búsqueda y Análisis"
+    },
+    {
+        name: "Bard",
+        description: "IA de Google (ahora Gemini) para generación de texto y respuestas contextuales.",
+        link: "https://bard.google.com/",
+        category: "Chatbots"
+    },
+    {
+        name: "ElevenLabs",
+        description: "Plataforma de voz AI con generación y clonación de voces realistas.",
+        link: "https://elevenlabs.io/",
+        category: "Texto a Voz"
+    },
+    {
+        name: "Kaiber",
+        description: "Generador de videos artísticos y animaciones mediante IA.",
+        link: "https://kaiber.ai/",
+        category: "Generación de Video"
+    },
+    {
+        name: "InVideo AI",
+        description: "Crea videos profesionales automáticamente a partir de texto.",
+        link: "https://invideo.io/ai/",
+        category: "Generación de Video"
+    },
+    {
+        name: "AutoDraw",
+        description: "Herramienta de dibujo asistido por IA (de Google).",
+        link: "https://www.autodraw.com/",
+        category: "Diseño"
+    },
+    {
+        name: "Canva AI",
+        description: "Suite de diseño con herramientas AI para generar gráficos, presentaciones y más.",
+        link: "https://www.canva.com/ai-tools/",
+        category: "Diseño"
+    },
+    {
+        name: "Adobe Firefly",
+        description: "Familia de modelos creativos de Adobe para generación de imágenes y texto.",
+        link: "https://www.adobe.com/sensei/generative-ai/firefly.html",
+        category: "Generación de Imágenes"
+    },
+    {
+        name: "Otter.ai",
+        description: "Transcripción automática de reuniones y notas con IA.",
+        link: "https://otter.ai/",
+        category: "Productividad"
+    },
+    {
+        name: "HeyGen",
+        description: "Crea videos con avatares parlantes y voces generadas por IA.",
+        link: "https://www.heygen.com/",
+        category: "Generación de Video"
+    },
+    {
+        name: "Pika Labs",
+        description: "Genera y edita videos con comandos de texto.",
+        link: "https://pika.art/",
+        category: "Generación de Video"
+    },
+    {
+        name: "Sunno AI",
+        description: "Genera música completa con IA a partir de descripciones.",
+        link: "https://sunno.ai/",
+        category: "Generación de Audio"
+    },
+    {
+        name: "Beatoven",
+        description: "Crea música libre de derechos con IA para proyectos creativos.",
+        link: "https://www.beatoven.ai/",
+        category: "Generación de Audio"
+    },
+    {
+        name: "Poised",
+        description: "IA coach para mejorar tus habilidades de comunicación en reuniones.",
+        link: "https://www.poised.com/",
+        category: "Productividad"
+    },
+    {
+        name: "Cursor",
+        description: "Editor de código con IA integrada para autocompletado y optimización.",
+        link: "https://www.cursor.so/",
+        category: "Programación"
+    },
+    {
+        name: "Dora AI",
+        description: "Genera sitios web interactivos a partir de prompts de texto.",
+        link: "https://www.dora.ai/",
+        category: "Diseño"
+    },
+    {
+        name: "Uizard",
+        description: "Diseña prototipos de apps y webs con IA en minutos.",
+        link: "https://uizard.io/",
+        category: "Diseño"
+    },
+    {
+        name: "Grok",
+        description: "IA de xAI (Elon Musk) con acceso a datos en tiempo real.",
+        link: "https://grok.x.ai/",
+        category: "Chatbots"
+    },
+    {
+        name: "Ideogram",
+        description: "Genera imágenes con texto integrado (para logos, posters, etc.).",
+        link: "https://ideogram.ai/",
+        category: "Generación de Imágenes"
+    },
+    {
+        name: "PlayHT",
+        description: "Generador de voces ultra realistas para contenido en múltiples idiomas.",
+        link: "https://play.ht/",
+        category: "Texto a Voz"
+    },
+    {
+        name: "Vizrt",
+        description: "IA para automatización de producción de noticias y gráficos en video.",
+        link: "https://www.vizrt.com/",
+        category: "Generación de Video"
+    },
+    {
+        name: "Suno",
+        description: "Genera canciones completas (música y letra) con IA.",
+        link: "https://suno.com/",
+        category: "Generación de Audio"
+    },
+    {
+        name: "Codeium",
+        description: "Alternativa a Copilot para autocompletado de código con IA.",
+        link: "https://www.codeium.com/",
+        category: "Programación"
+    },
+    {
+        name: "Warp",
+        description: "Terminal moderna con IA integrada para comandos y sugerencias.",
+        link: "https://www.warp.dev/",
+        category: "Programación"
+    },
+    {
+        name: "TLDV",
+        description: "Graba y transcribe reuniones automáticamente con resúmenes por IA.",
+        link: "https://tldv.io/",
+        category: "Productividad"
+    },
+    {
+        name: "Gamma",
+        description: "Crea presentaciones, documentos y páginas web con IA.",
+        link: "https://gamma.app/",
+        category: "Productividad"
     }
 ];
 
