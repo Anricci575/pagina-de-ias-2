@@ -1030,3 +1030,25 @@ body.retro-mode .ai-item .favorite-btn {
 body.retro-mode .ai-item {
     position: relative; /* Necesario para que el botón se posicione dentro de la tarjeta */
 }
+/* Efecto de aparición */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Clase para aplicar el efecto */
+.animate-fade-in-up {
+    opacity: 0; /* Elemento inicialmente invisible */
+    animation: fadeInUp 0.6s ease-out forwards;
+}
+
+/* Retrasos opcionales para elementos consecutivos */
+.animate-delay-1 { animation-delay: 0.2s; }
+.animate-delay-2 { animation-delay: 0.4s; }
+.animate-delay-3 { animation-delay: 0.6s; }
