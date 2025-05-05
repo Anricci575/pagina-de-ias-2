@@ -25,91 +25,98 @@
 
     <!-- Encabezado -->
     <header>
-        <div class="logo">
-            <h1>IA Futuristas</h1>
-        </div>
-        <p>Explora las mejores IAs que están revolucionando el mundo</p>
         <div class="btn-container">
+            <h1 class="animate-fade-in-up">IA Futuristas</h1>
+        
+        <p class="animate-fade-in-up">Explora las mejores IAs que están revolucionando el mundo</p>
+        <div class="animate-fade-in-up">
             <button id="theme-toggle" class="btn-toggle">Modo Oscuro</button>
-            <button id="retro-toggle" class="btn-toggle">Modo Retro</button>
             <button id="doc-toggle" class="btn-toggle">Documentación</button>
+        </div>
+        <div class="btn-container">
+            <button id="retro-toggle" class="btn-toggle">Modo Retro</button>
         </div>
     </header>
 
     <!-- Barra de búsqueda -->
-    <div class="search-bar">
-        <input type="text" id="search-input" placeholder="Buscar IA por nombre o descripción...">
+    <div class="animate-fade-in-up">
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Buscar IA por nombre o descripción...">
+        </div>
     </div>
 
     <!-- Contenido Principal -->
-    <main>
-        <!-- Lista de IAs -->
-        <section id="aiList" class="ias"></section>
+        <main>
+            <div class="animate-fade-in-up">
+            <!-- Lista de IAs -->
+            <section id="aiList" class="ias"></section>
 
-        <!-- Sección de Favoritos -->
-        <section id="favorites-section" class="hidden">
-            <h2>Favoritos <span id="favorites-count">(0)</span></h2>
-            <div id="favorites-list" class="ias"></div>
-        </section>
-        <section id="aiList" class="ias"></section>
+            <!-- Sección de Favoritos -->
+            <section id="favorites-section" class="hidden">
+                <h2>Favoritos <span id="favorites-count">(0)</span></h2>
+                <div id="favorites-list" class="ias"></div>
+            </section>
+            <section id="aiList" class="ias"></section>
 
-        <!-- Resumen de IAs -->
-        <section id="summary" class="summary">
-            <h2>Resumen de IAs</h2>
-            <div id="summaryContent"></div>
-        </section>
-    </main>
+            <!-- Resumen de IAs -->
+            <section id="summary" class="summary">
+                <h2>Resumen de IAs</h2>
+                <div id="summaryContent"></div>
+            </section>
+            </div>
+        </main>
 
     <!-- Modal de Documentación -->
     <div id="doc-modal" class="modal hidden">
         <div class="modal-content">
             <span class="close-modal">&times;</span>
             <h2>Documentación de IA Futuristas</h2>
-            <div class="doc-content">
-                <h3>¿Qué es este sitio?</h3>
-                <p>IA Futuristas es un repositorio interactivo que recopila las herramientas de inteligencia artificial más innovadoras del mercado, organizadas por categorías para fácil acceso.</p>
-                <h3>Funcionalidades principales</h3>
-                <ul>
-                    <li><strong>Catálogo completo:</strong> Explora más de 50 IAs diferentes con sus descripciones y enlaces oficiales</li>
-                    <li><strong>Favoritos:</strong> Guarda tus IAs preferidas para un acceso rápido</li
-                    </li>
-                    <li><strong>Sistema de categorías:</strong> Filtra por tipo de IA (Programación, Imágenes, Audio, etc.)</li>
-                    <li><strong>Modo Retro:</strong> Activa una experiencia visual nostálgica con efectos CRT</li>
-                    <li><strong>Resumen tabular:</strong> Vista rápida de todas las IAs disponibles</li>
-                    <li><strong>Diseño adaptable:</strong> Funciona perfectamente en móviles y desktop</li>
-                </ul>
-                <h3>¿Cómo usar el sitio?</h3>
-                <ol>
-                    <li>Navega por las tarjetas de IA o usa los filtros de categoría</li>
-                    <li>Escribe en la barra de búsqueda para localizar rápidamente IAs por nombre o descripción</li>
-                    <li>Haz clic en "Ver más" para visitar el sitio oficial de cada IA</li>
-                    <li>Usa los botones superiores para cambiar entre modos visuales</li>
-                    <li>En modo retro, haz clic en cualquier lugar para activar efectos glitch</li>
-                    <li>Consulta esta documentación cuando necesites ayuda</li>
-                </ol>
-                <h3>Tecnologías utilizadas</h3>
-                <p>Este sitio fue creado con tecnologías web modernas:</p>
-                <ul>
-                    <li><strong>HTML5:</strong> Estructura semántica del contenido</li>
-                    <li><strong>CSS3:</strong> Estilos avanzados y efectos visuales</li>
-                    <li><strong>JavaScript:</strong> Interactividad, animaciones y funcionalidad dinámica (incluyendo búsqueda interactiva)</li>
-                    <li><strong>Canvas API:</strong> Para las animaciones de partículas</li>
-                    <li><strong>Flexbox/Grid:</strong> Diseño responsive adaptable</li>
-                </ul>
-                <h3>Cambios recientes</h3>
-                <ul>
-                    <li><strong>Barra de búsqueda actualizada:</strong> 
+                <div class="animate-fade-in-up">
+                    <div class="doc-content">
+                        <h3>¿Qué es este sitio?</h3>
+                        <p>IA Futuristas es un repositorio interactivo que recopila las herramientas de inteligencia artificial más innovadoras del mercado, organizadas por categorías para fácil acceso.</p>
+                        <h3>Funcionalidades principales</h3>
                         <ul>
-                            <li>Reposicionada más cerca del encabezado</li>
-                            <li>Mejoras visuales como bordes redondeados y efectos de sombreado</li>
+                            <li><strong>Catálogo completo:</strong> Explora más de 50 IAs diferentes con sus descripciones y enlaces oficiales</li>
+                            <li><strong>Favoritos:</strong> Guarda tus IAs preferidas para un acceso rápido</li
+                            </li>
+                            <li><strong>Sistema de categorías:</strong> Filtra por tipo de IA (Programación, Imágenes, Audio, etc.)</li>
+                            <li><strong>Modo Retro:</strong> Activa una experiencia visual nostálgica con efectos CRT</li>
+                            <li><strong>Resumen tabular:</strong> Vista rápida de todas las IAs disponibles</li>
+                            <li><strong>Diseño adaptable:</strong> Funciona perfectamente en móviles y desktop</li>
                         </ul>
-                    </li>
-                </ul>
+                        <h3>¿Cómo usar el sitio?</h3>
+                        <ol>
+                            <li>Navega por las tarjetas de IA o usa los filtros de categoría</li>
+                            <li>Escribe en la barra de búsqueda para localizar rápidamente IAs por nombre o descripción</li>
+                            <li>Haz clic en "Ver más" para visitar el sitio oficial de cada IA</li>
+                            <li>Usa los botones superiores para cambiar entre modos visuales</li>
+                            <li>En modo retro, haz clic en cualquier lugar para activar efectos glitch</li>
+                            <li>Consulta esta documentación cuando necesites ayuda</li>
+                        </ol>
+                        <h3>Tecnologías utilizadas</h3>
+                        <p>Este sitio fue creado con tecnologías web modernas:</p>
+                        <ul>
+                            <li><strong>HTML5:</strong> Estructura semántica del contenido</li>
+                            <li><strong>CSS3:</strong> Estilos avanzados y efectos visuales</li>
+                            <li><strong>JavaScript:</strong> Interactividad, animaciones y funcionalidad dinámica (incluyendo búsqueda interactiva)</li>
+                            <li><strong>Canvas API:</strong> Para las animaciones de partículas</li>
+                            <li><strong>Flexbox/Grid:</strong> Diseño responsive adaptable</li>
+                        </ul>
+                        <h3>Cambios recientes</h3>
+                        <ul>
+                            <li><strong>Barra de búsqueda actualizada:</strong> 
+                                <ul>
+                                    <li>Reposicionada más cerca del encabezado</li>
+                                    <li>Mejoras visuales como bordes redondeados y efectos de sombreado</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div> 
+                </div>
             </div>
-        </div>
-    </div> 
-        </div>
-    </div>
 
     <!-- Scripts -->
     <script src="animation.js"></script>
