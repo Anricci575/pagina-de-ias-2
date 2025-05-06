@@ -456,7 +456,7 @@ canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
 let particles = [];
-const numParticles = 200;
+const numParticles = 150;
 
 const mouse = {
     x: undefined,
