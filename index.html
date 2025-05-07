@@ -19,9 +19,12 @@
 </head>
 <body>
     <!-- Fondo Animado -->
+
     <div id="background">
+        <canvas id="c"></canvas>
         <canvas id="canvas"></canvas>
     </div>
+    
 
     <!-- Encabezado -->
     <header>
@@ -53,7 +56,7 @@
 
             <!-- Sección de Favoritos -->
             <section id="favorites-section" class="hidden">
-                <h2>Favoritos <span id="favorites-count">(0)</span></h2>
+                <h2>Favoritos <span id="favorites-count"></span></h2>
                 <div id="favorites-list" class="ias"></div>
             </section>
             <section id="aiList" class="ias"></section>
@@ -124,5 +127,6 @@
     <script src="doc-modal.js"></script>
     <script src="favorites.js"></script>
     <script src="search.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
