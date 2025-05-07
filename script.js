@@ -1,13 +1,14 @@
 var root = {
   wavecolor: {  
-    r: 125,
-    g: 52,
-    b: 253
-    },
-    rainbowSpeed: 0.5,
-    rainbow: true,
-    matrixspeed: 50
+    r: 0,    // Rojo: 0 (sin rojo)
+    g: 100,  // Verde: oscuro (100)
+    b: 0     // Azul: 0 (sin azul)
+  },
+  rainbowSpeed: 0.5,
+  rainbow: false,
+  matrixspeed: 50
 };
+
 
 var c = document.getElementById("c");
 var ctx = c.getContext("2d");
@@ -48,7 +49,7 @@ function draw() {
     for (var i = 0; i < drops.length; i++)
     {
         // background color
-        ctx.fillStyle = "rgba(10,10,10, 1)";
+        ctx.fillStyle = "rgb(0, 0, 0)";
         ctx.fillRect(i * font_size, drops[i] * font_size,font_size,font_size);
         // a random chinese character to print
         var text = characters[Math.floor(Math.random() * characters.length)];
