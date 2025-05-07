@@ -255,7 +255,7 @@ const ais = [
     {
         name: "Dora AI",
         description: "Genera sitios web interactivos a partir de prompts de texto.",
-        link: "https://dora.run/",  // ¡Link correcto!,
+        link: "https://www.dora.ai/",
         category: "Diseño"
     },
     {
@@ -317,13 +317,7 @@ const ais = [
         description: "Crea presentaciones, documentos y páginas web con IA.",
         link: "https://gamma.app/",
         category: "Productividad"
-    },
-    {
-        name: "Kimi.ai",
-        description: "IA conversacional avanzada con capacidad de análisis de documentos y respuestas contextuales largas.",
-        link: "https://kimi.moonshot.cn/",  // Link oficial (en chino, pero funciona)
-        category: "Chatbots"
-    },
+    }
 ];
 
 // Función para crear filtros de categoría
@@ -450,13 +444,13 @@ function generateSummary() {
 }
 
 // Configuración del canvas y partículas
-const canvas = document.getElementById("canvas");
+/*const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
 let particles = [];
-const numParticles = 150;
+const numParticles = 150; // Número de partículas
 
 const mouse = {
     x: undefined,
@@ -558,7 +552,9 @@ window.addEventListener("resize", () => {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
     initParticles();
-});
+});*/
+//hasta aquí
+// Configuración del canvas y partículas
 
 function initializePage() {
     createCategoryFilters();
