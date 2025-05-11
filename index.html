@@ -28,10 +28,20 @@
 
     <!-- Encabezado -->
     <header>
+            <!-- Botón en esquina superior izquierda -->
+    <div class="btn-container">
+        <div class="header-top-bar">
+            <button id="dev-info-btn" class="btn-toggle dev-info-button">
+                <span class="button-text">Información del Desarrollador</span>
+                <span class="button-icon">👾​</span>
+            </button>
+        </div>   
+    </div>
         <div class="btn-container">
             <h1 class="animate-fade-in-up">IA Futuristas</h1>
         
         <p class="typing-effect">Explora las mejores IAs que están revolucionando el mundo</p>
+        <p class="fade-in">andres ricci</p>
         <div class="animate-fade-in-up">
             <button id="theme-toggle" class="btn-toggle">Modo Oscuro</button>
             <button id="doc-toggle" class="btn-toggle">Documentación</button>
@@ -120,6 +130,40 @@
             </div> 
                 </div>
             </div>
+            <!-- Modal de Información del Desarrollador -->
+    <div id="dev-info-modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Acerca del Desarrollador</h2>
+            <div class="dev-info-content">
+                <div class="info-section">
+                    <h3>Nombre:</h3>
+                    <p>Andres Ricci</p>
+                </div>
+                <div class="info-section">
+                    <h3>Contacto:</h3>
+                    <p>tu@email.com</p>
+                </div>
+                <div class="info-section">
+                    <h3>Redes Sociales:</h3>
+                    <div class="social-links">
+                        <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+                        <a href="https://twitter.com" target="_blank">Twitter</a>
+                        <a href="https://github.com" target="_blank">GitHub</a>
+                    </div>
+                </div>
+                <div class="info-section">
+                    <h3>Tecnologías utilizadas:</h3>
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript</li>
+                        <li>Canvas API</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Scripts -->
     <script src="animation.js"></script>
