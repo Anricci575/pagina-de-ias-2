@@ -1150,3 +1150,17 @@ body.retro-mode .ai-item {
         transform: none;
     }
 }
+@media (max-width: 425px) {
+    #c {
+        height: 100vh; /* Altura completa */
+    }
+}
+#c {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    display: block;
+}
