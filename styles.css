@@ -1071,3 +1071,61 @@ body.retro-mode .ai-item {
     from, to { border-color: transparent }
     50% { border-color: #333; }
   }
+  .fade-in {
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in forwards;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+ /* --- Barra superior con botón --- */
+.header-top-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: left;
+    z-index: 100;
+}
+
+/* Estilo específico para el botón */
+
+
+.dev-info-button:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+    transform: translateY(-1px);
+}
+
+.button-icon {
+    font-size: 16px;
+}
+
+/* Ajuste para el contenido principal */
+.header-main-content {
+    margin-top: 40px; /* Espacio para la barra superior */
+    text-align: center;
+}
+
+/* Versión móvil */
+@media (max-width: 768px) {
+    .header-top-bar {
+        padding: 8px 10px;
+    }
+    
+    .dev-info-button {
+        padding: 5px 12px;
+    }
+    
+    .button-text {
+        display: none; /* Oculta el texto en móviles */
+    }
+    
+    .button-icon {
+        font-size: 18px;
+    }
+} 
