@@ -1164,3 +1164,17 @@ body.retro-mode .ai-item {
     z-index: -1;
     display: block;
 }
+#c {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw !important;
+    height: 100vh !important;
+    z-index: -1;
+    pointer-events: none;
+}
+
+html, body {
+    overflow-x: hidden;
+    overscroll-behavior-y: contain;
+}
