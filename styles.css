@@ -1129,3 +1129,24 @@ body.retro-mode .ai-item {
         font-size: 18px;
     }
 } 
+/* Para el contenedor del canvas */
+#background {
+    position: fixed; /* ¡Clave para que sea fijo! */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Para que quede detrás del contenido */
+}
+
+
+
+/* Para móviles */
+@media (max-width: 425px) {
+    #c {
+        width: 100vw; /* Ocupa todo el ancho */
+        height: 867px; /* Mantiene altura */
+        left: 0;
+        transform: none;
+    }
+}
