@@ -1184,3 +1184,76 @@ html, body {
     border-radius: 50%;
     object-fit: cover;
   }
+   .social-icon {
+    font-size: 24px; /* Tamaño del ícono */
+    color: #333; /* Color oscuro (cambia a #000 para negro) */
+    margin: 0 10px; /* Espacio entre íconos */
+    transition: 0.3s; /* Efecto suave al pasar el mouse */
+  }
+  .social-icon:hover {
+    opacity: 0.8;
+    transform: scale(1.1); /* Efecto de zoom */
+  }
+          .social-container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+    width: 100%; /* Asegura que ocupe todo el ancho disponible */
+}
+        
+        
+        .social-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            text-decoration: none;
+            font-size: 24px;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .social-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, transparent, rgba(255,255,255,0.3));
+            transform: translateX(-100%);
+            transition: transform 0.3s ease;
+        }
+        
+        .social-btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+        
+        .social-btn:hover::before {
+            transform: translateX(100%);
+        }
+        
+        .instagram {
+            background: linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D);
+            color: white;
+        }
+        
+        .github {
+            background: #333;
+            color: white;
+        }
+        
+        .social-btn i {
+            transition: transform 0.3s ease;
+        }
+        
+        .social-btn:hover i {
+            transform: scale(1.2);
+        }
+        
