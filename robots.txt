@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://anricci575.github.io/pagina-de-ias-2/sitemap.xml
