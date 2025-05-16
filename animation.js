@@ -317,7 +317,151 @@ const ais = [
         description: "Crea presentaciones, documentos y páginas web con IA.",
         link: "https://gamma.app/",
         category: "Productividad"
-    }
+    },
+    {
+        name: "Claude 2",
+        description: "IA de procesamiento de lenguaje natural avanzada por Anthropic.",
+        link: "https://claude.ai/",
+        category: "Chatbots"
+    },
+    {
+        name: "Miro AI",
+        description: "Herramienta colaborativa con IA para mapas mentales y lluvia de ideas.",
+        link: "https://miro.com/",
+        category: "Productividad"
+    },
+    {
+        name: "ChatSonic",
+        description: "Chatbot impulsado por IA que incluye generación de imágenes y respuestas en tiempo real.",
+        link: "https://writesonic.com/chat",
+        category: "Chatbots"
+    },
+    {
+        name: "Replica AI",
+        description: "Compañero virtual con inteligencia emocional que responde y conversa.",
+        link: "https://replika.com/",
+        category: "Chatbots"
+    },
+    {
+        name: "Krisp",
+        description: "Eliminación de ruido de fondo en tiempo real para videollamadas.",
+        link: "https://krisp.ai/",
+        category: "Procesamiento de Audio"
+    },
+    {
+        name: "Mem AI",
+        description: "Herramienta de toma de notas inteligente con IA para organizar información automáticamente.",
+        link: "https://mem.ai/",
+        category: "Productividad"
+    },
+    {
+        name: "Lexica",
+        description: "Buscador de imágenes generadas con IA y prompts de arte.",
+        link: "https://lexica.art/",
+        category: "Generación de Imágenes"
+    },
+    {
+        name: "Compose AI",
+        description: "Extensión de navegador que agiliza la redacción y corrección de textos.",
+        link: "https://www.compose.ai/",
+        category: "Generación de Texto"
+    },
+    {
+        name: "Fireflies AI",
+        description: "Asistente para reuniones que toma notas y crea resúmenes automáticamente.",
+        link: "https://fireflies.ai/",
+        category: "Productividad"
+    },
+    {
+        name: "Soundraw",
+        description: "Generador de música personalizada para videos y proyectos creativos.",
+        link: "https://soundraw.io/",
+        category: "Generación de Audio"
+    },
+    {
+        name: "Flowrite",
+        description: "Generador de respuestas automáticas y textos profesionales con IA.",
+        link: "https://www.flowrite.com/",
+        category: "Generación de Texto"
+    },
+    {
+        name: "Bardeen AI",
+        description: "IA para automatización de tareas repetitivas en entornos digitales.",
+        link: "https://www.bardeen.ai/",
+        category: "Productividad"
+    },
+    {
+        name: "Aiva",
+        description: "Compositor de música clásico y moderno utilizando algoritmos de IA.",
+        link: "https://www.aiva.ai/",
+        category: "Generación de Audio"
+    },
+    {
+        name: "DeepArt",
+        description: "Convierte fotos en obras de arte con filtros generativos inspirados en artistas famosos.",
+        link: "https://deepart.io/",
+        category: "Generación de Imágenes"
+    },
+    {
+        name: "AI Image Enlarger",
+        description: "Amplía imágenes sin perder calidad utilizando algoritmos de superresolución.",
+        link: "https://imglarger.com/",
+        category: "Procesamiento de Imágenes"
+    },
+    {
+        name: "Respeecher",
+        description: "Convierte la voz en tiempo real en cualquier otra voz previamente entrenada.",
+        link: "https://www.respeecher.com/",
+        category: "Procesamiento de Audio"
+    },
+    {
+        name: "LumenVox",
+        description: "Reconocimiento de voz para sistemas de atención automatizados.",
+        link: "https://www.lumenvox.com/",
+        category: "Procesamiento de Audio"
+    },
+    {
+        name: "Gretel",
+        description: "Generador de datos sintéticos para pruebas y desarrollo.",
+        link: "https://gretel.ai/",
+        category: "Análisis de Datos"
+    },
+    {
+        name: "Hugging Face",
+        description: "Plataforma colaborativa para modelos de lenguaje y procesamiento de datos.",
+        link: "https://huggingface.co/",
+        category: "Procesamiento de Lenguaje"
+    },
+    {
+        name: "Rasa",
+        description: "Framework de código abierto para construir chatbots personalizados.",
+        link: "https://rasa.com/",
+        category: "Chatbots"
+    },
+    {
+        name: "Einblick",
+        description: "Herramienta de análisis de datos colaborativo e interactivo en tiempo real.",
+        link: "https://www.einblick.ai/",
+        category: "Análisis de Datos"
+    },
+    {
+        name: "Visio AI",
+        description: "Generación de diagramas y mapas conceptuales automáticamente.",
+        link: "https://visio.microsoft.com/",
+        category: "Visualización de Datos"
+    },
+    {
+        name: "Magenta",
+        description: "IA de Google para generar música y arte mediante redes neuronales.",
+        link: "https://magenta.tensorflow.org/",
+        category: "Generación de Arte"
+    },
+    {
+        name: "Meya",
+        description: "Plataforma de creación de asistentes virtuales integrados en múltiples servicios.",
+        link: "https://www.meya.ai/",
+        category: "Chatbots"
+    },
 ];
 
 // Función para crear filtros de categoría
