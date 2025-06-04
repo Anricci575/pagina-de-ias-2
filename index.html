@@ -86,36 +86,7 @@
             <input type="text" id="search-input" placeholder="Buscar IA por nombre o descripción...">
         </div>
     </div>
-    <!-- el chat bot -->
-<div class="chatbot-floating">
-    <div class="chatbot-container">
-        <div class="chatbot-header">
-            Asistente Virtual
-            <button class="close-chat">×</button>
-        </div>
-        <div id="chat-box"></div>
-        <div class="input-area">
-            <input type="text" id="user-input" placeholder="Escribe tu mensaje...">
-            <button id="send-btn">Enviar</button>
-        </div>
-    </div>
-    <button class="chatbot-trigger">💬</button>
-</div>
 
-<!-- JavaScript básico para toggle -->
-<script>
-    const floatingButton = document.querySelector('.chatbot-floating');
-    const triggerButton = document.querySelector('.chatbot-trigger');
-    const closeButton = document.querySelector('.close-chat');
-    
-    triggerButton.addEventListener('click', () => {
-        floatingButton.classList.toggle('active');
-    });
-    
-    closeButton.addEventListener('click', () => {
-        floatingButton.classList.remove('active');
-    });
-</script>
     <!-- Contenido Principal -->
         <main>
             <div class="animate-fade-in-up">
