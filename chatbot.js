@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const sendBtn = document.getElementById('send-btn');
 
   // === Configuración ===
-  const API_KEY = process.env.GOOGLE_API_KEY; // Usa variables de entor // Reemplaza con tu propia API Key si es necesario
+  const API_KEY = "AIzaSyDGCTrpxGVVa4Ce2yaIlAlQaUNUrsEVxDk"; // Reemplaza con tu propia API Key si es necesario
   const MODEL_NAME = "gemini-1.5-flash-latest";
 
   // === Historial de conversación (si deseas mantener el contexto) ===
